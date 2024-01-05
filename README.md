@@ -31,7 +31,7 @@ Run the main_shell for starting up the Command Line
 
 ## Usage
 
-In the Main Shell, simply type out the commands 
+In the Main Shell, simply type out the commands like these(refer to commands and flags)
 
 ```
 cd ..
@@ -47,28 +47,16 @@ rm -d new_folder
 ```
 
 ## Commands and Flags
-* ### echo:
--E , -n
+| Command      | Flags        |
+|--------------|--------------|
+| echo         | -E , -n      |
+| pwd          | -            |
+| cd           | -L           |
+| rm           | -i , -d      |
+| mkdir        | -v , -p      |
+| ls           | -A , -a , -i |
+| date         | -R , -u      |
+| cat          | -v , -E      |
 
-* ### pwd
-
-* ### cd:
--L
-
-
-* ### rm:
--i , -d
-
-* ### mkdir:
--v , -p
-
-* ### ls:
--A , -a , -i
-
-* ### date:
--R , -u
-
-* ### cat;
--v , -E
 
 
