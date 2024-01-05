@@ -1,11 +1,11 @@
 # Linux-Shell
 
-Linux Command Line project built as an assignment for the Operating Systems course @IIIT-Delhi
+* Linux Command Line project built as an assignment for the Operating Systems course @IIIT-Delhi
 
 
 ## Getting Started
 
-*Clone the git repository
+* Clone the git repository
 ```
 git clone https://github.com/Madhur-iiitd/Linux-Shell.git
 ```
@@ -13,25 +13,25 @@ git clone https://github.com/Madhur-iiitd/Linux-Shell.git
 
 ### Prerequisites
 
-*Linux based os required
-*Tested on Ubuntu, Artix and Kali-Linux based WSL
+* Linux based os required
+* Tested on Ubuntu, Artix and Kali-Linux based WSL
 
 
 ### Installation
 
-Run the makefile to compile the C files
+* Run the makefile to compile the C files
 ```
 make
 ```
 
-Run the main_shell for starting up the Command Line
+* Run the main_shell for starting up the Command Line
 ```
 ./main_shell
 ```
 
 ## Usage
 
-In the Main Shell, simply type out the commands like these(refer to commands and flags)
+* In the Main Shell, simply type out the commands like these(refer to commands and tags)
 
 ```
 cd ..
@@ -46,11 +46,11 @@ mkdir new_folder
 rm -d new_folder
 ```
 
-## Commands and Flags
-| Command      | Flags        |
+## Commands and Tags
+| Command      |  Tags        |
 |--------------|--------------|
 | echo         | -E , -n      |
-| pwd          | -            |
+| pwd          | (no tags)    |
 | cd           | -L           |
 | rm           | -i , -d      |
 | mkdir        | -v , -p      |
