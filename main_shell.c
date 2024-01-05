@@ -126,7 +126,7 @@ void echo(char *split_str, char *tag)
 void mkdir1(char *tag, char *directory)
 {
   char *path_mkdir = (char *)malloc(1024 * sizeof(char));
-  path_mkdir = "/home/user/newFolder/mkdir";
+  path_mkdir = "./mkdir";
   int *s;
   pid_t pid = fork();
   if (pid < 0)
@@ -162,7 +162,7 @@ void mkdir1(char *tag, char *directory)
 void cat(char *tag, char *directory)
 {
   char *path_cat = (char *)malloc(1024 * sizeof(char));
-  path_cat = "/home/user/newFolder/cat";
+  path_cat = "./cat";
   int *s;
   pid_t pid = fork();
   if (pid < 0)
@@ -198,7 +198,7 @@ void cat(char *tag, char *directory)
 void ls(char *tag)
 {
   char *path_ls = (char *)malloc(1024 * sizeof(char));
-  path_ls = "/home/user/newFolder/ls";
+  path_ls = "./ls";
   int *s;
   pid_t pid = fork();
   if (pid < 0)
@@ -245,7 +245,7 @@ void ls(char *tag)
 void date(char *tag)
 {
   char *path_date = (char *)malloc(1024 * sizeof(char));
-  path_date = "/home/user/newFolder/date";
+  path_date = "./date";
   int *s;
   pid_t pid = fork();
   if (pid < 0)
@@ -281,7 +281,7 @@ void date(char *tag)
 void rm(char *tag, char *directory)
 {
   char *path_rm = (char *)malloc(1024 * sizeof(char));
-  path_rm = "/home/user/newFolder/rm";
+  path_rm = "./rm";
   int *s;
   pid_t pid = fork();
   if (pid < 0)
@@ -464,7 +464,7 @@ int main()
           char *path = (char *)malloc(1024 * sizeof(char));
           if (split_str == NULL)
           {
-            path = mergeArgs("/home/user/newFolder/date", "0", "");
+            path = mergeArgs("./date", "0", "");
             thread_T(path);
           }
           else
@@ -474,7 +474,7 @@ int main()
             split_str = strtok(NULL, " ");
             if (split_str == NULL)
             {
-              path = mergeArgs("/home/user/newFolder/date", tag, "");
+              path = mergeArgs("./date", tag, "");
               thread_T(path);
             }
             else
@@ -535,7 +535,7 @@ int main()
                 {
                   while (split_str != NULL)
                   {
-                    path = mergeArgs("/home/user/newFolder/rm", tag, split_str);
+                    path = mergeArgs("./rm", tag, split_str);
                     thread_T(path);
                     split_str = strtok(NULL, " ");
                   }
@@ -550,7 +550,7 @@ int main()
             {
               while (split_str != NULL)
               {
-                path = mergeArgs("/home/user/newFolder/rm", "0", split_str);
+                path = mergeArgs("./rm", "0", split_str);
                 thread_T(path);
                 split_str = strtok(NULL, " ");
               }
@@ -611,7 +611,7 @@ int main()
           char *path = (char *)malloc(1024 * sizeof(char));
           if (split_str == NULL)
           {
-            path = mergeArgs("/home/user/newFolder/ls", "0", "");
+            path = mergeArgs("./ls", "0", "");
             thread_T(path);
           }
           else
@@ -621,7 +621,7 @@ int main()
             split_str = strtok(NULL, " ");
             if (split_str == NULL)
             {
-              path = mergeArgs("/home/user/newFolder/ls", tag, "");
+              path = mergeArgs("./ls", tag, "");
               thread_T(path);
             }
             else
@@ -680,7 +680,7 @@ int main()
                 {
                   while (split_str != NULL)
                   {
-                    path = mergeArgs("/home/user/newFolder/mkdir", tag, split_str);
+                    path = mergeArgs("./mkdir", tag, split_str);
                     thread_T(path);
                     split_str = strtok(NULL, " ");
                   }
@@ -695,7 +695,7 @@ int main()
             {
               while (split_str != NULL)
               {
-                path = mergeArgs("/home/user/newFolder/mkdir", "0", split_str);
+                path = mergeArgs("./mkdir", "0", split_str);
                 thread_T(path);
                 split_str = strtok(NULL, " ");
               }
@@ -775,7 +775,7 @@ int main()
                 {
                   while (split_str != NULL)
                   {
-                    path = mergeArgs("/home/user/newFolder/cat", tag, split_str);
+                    path = mergeArgs("./cat", tag, split_str);
                     thread_T(path);
                     split_str = strtok(NULL, " ");
                   }
@@ -791,7 +791,7 @@ int main()
 
               while (split_str != NULL)
               {
-                path = mergeArgs("/home/user/newFolder/cat", "0", split_str);
+                path = mergeArgs("./cat", "0", split_str);
                 thread_T(path);
                 split_str = strtok(NULL, " ");
               }
