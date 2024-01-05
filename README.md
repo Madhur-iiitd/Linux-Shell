@@ -47,16 +47,16 @@ rm -d new_folder
 ```
 
 ## Commands and Tags
-| Command      | Flags        | Description                              | Usage of Tags                          |
-|--------------|--------------|------------------------------------------|----------------------------------------|
-| echo         | -E , -n      | Display a line of text                   | Use -E to interpret backslashes (\)    |
-| pwd          | -            | Print the current working directory      | No specific tags                       |
-| cd           | -L           | Change the current directory             | No specific tags                       |
+| Command      | Flags        | Description                              | Usage of Tags                                  |
+|--------------|--------------|------------------------------------------|------------------------------------------------|
+| echo         | -E , -n      | Display a line of text                   | Use -E to interpret backslashes (\)            |
+| pwd          | -            | Print the current working directory      | No specific tags                               |
+| cd           | -L           | Change the current directory             | Use -L to follow symbolic links when changing directories |
 | rm           | -i , -d      | Remove files or directories              | Use -i for interactive prompt, -d to remove directories |
 | mkdir        | -v , -p      | Create directories                       | Use -v for verbose output, -p for creating parent directories if needed |
 | ls           | -A , -a , -i | List files and directories               | Use -A to list almost all files, -a for all files including hidden, -i for inode numbers |
 | date         | -R , -u      | Display or set the system date and time  | Use -R for RFC 2822 formatted date, -u for UTC time |
-| cat          | -v , -E      | Concatenate and display file content    | Use -v to show non-printing characters, -E to display $ at end of each line   |
+| cat          | -v , -E      | Concatenate and display file content    | Use -v to show non-printing characters, -E to display $ at the end of each line |
 
 
 
